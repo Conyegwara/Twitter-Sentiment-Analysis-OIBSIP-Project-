@@ -70,7 +70,11 @@ The main objective of this project is to build a sentiment analysis model capabl
 ### 📊 Evaluation Metrics
 
 - Model accurancy: 73%
-
+-  Setiment Average
+   - positive = 44%
+   - Neutral = 34%
+   -  Negative = 22%
+  
 - Classification Report
 
 |Sentiment|Precision|Recall|F1-score|support|
