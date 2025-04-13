@@ -25,9 +25,36 @@ The main objective of this project is to build a sentiment analysis model capabl
 - Visualization: **matplotlib, seaborn**
 
 ### 📂 Data Overview
-Data source: https://www.kaggle.com/datasets/saurabhshahane/twitter-sentiment-dataset
+ - <a href="https://www.kaggle.com/datasets/saurabhshahane/twitter-sentiment-dataset">Data source</a>
 
-Dataset: 
+ - <a href="https://github.com/Conyegwara/Twitter-Sentiment-Analysis-OIBSIP-Project-/blob/main/Twitter_Data.csv">Dataset</a>
+
+- Columns:
+  - clean_text: Cleaned text of the tweet
+  - category: Sentiment label
+    - 1.0 → Positive
+    - 0.0 → Neutral
+    - -1.0 → Negative
+       
+- Size: ~163,000 rows
+
+#### 🔄 Data Preprocessing
+
+-1. Missing Values: Removed all rows with null values in either clean_text or category
+  - $df.dropna(inplace=True)$
+ 
+- Text Cleaning:
+  - Lowercasing
+  - Removing URLs, mentions, hashtags, punctuation
+  - Tokenizing, removing stopwords, and lemmatization using nltk
+    - $def clean_text(text)$:
+    - $...$
+    - $return ' '.join(tokens)$
+   
+
+
+
+
 
 
 
