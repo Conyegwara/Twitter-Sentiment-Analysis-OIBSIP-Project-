@@ -112,6 +112,7 @@ The main objective of this project is to build a sentiment analysis model capabl
 - 🔹 Confusion Matrix
 - 🔹 Sentiment Distribution
 - A bar chart showing the original distribution of sentiment labels in the dataset.
+- A heatmap showing the confusion matrix of the twitter dataset
 
   ![sentiment distribution](https://github.com/user-attachments/assets/f0b710fa-2007-484d-8227-4eb56f4f4cd1)
 
