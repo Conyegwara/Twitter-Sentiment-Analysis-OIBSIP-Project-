@@ -3,6 +3,8 @@
 
 - [Description](#description)
 - [📌Project Overview](#📌project-overview)
+- [Project Objectives](#project-objectives)
+- [🧰Tools & Libraries](#🧰tools-&-libraries)
 
 
 ### Description
@@ -23,7 +25,7 @@ The main objective of this project is to build a sentiment analysis model capabl
 - Visualize sentiment distribution and model performance for clear interpretation.
 - Document and demonstrate a reproducible NLP pipeline
 
-### 🧰 Tools & Libraries
+### 🧰Tools & Libraries
 
 - Programming Language: **Python**
 - Data Handling: **pandas, numpy**
