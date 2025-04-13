@@ -24,6 +24,11 @@ The main objective of this project is to build a sentiment analysis model capabl
 - Evaluation: **classification_report, confusion_matrix**
 - Visualization: **matplotlib, seaborn**
 
+### 📂 Data Overview
+Data source: https://www.kaggle.com/datasets/saurabhshahane/twitter-sentiment-dataset
+
+Dataset: 
+
 
 
 
