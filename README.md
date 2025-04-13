@@ -5,7 +5,15 @@
 - [📌Project Overview](#📌project-overview)
 - [Project Objectives](#project-objectives)
 - [🧰Tools & Libraries](#🧰tools-&-libraries)
-
+- [📂Data Overview](#📂data-overview)
+- [🔄Data Preprocessing](#🔄data-preprocessing)
+- [🤖Model Training](#🤖model-training)
+- [📊Evaluation Metrics](#📊evaluation-metrics)
+- [Observations](#Observations)
+- [📈Visualizations](#📈visualizations)
+- [✅Conclusions](#✅conclusions)
+- [🚀Future Improvements](#🚀future-improvements)
+  
 
 ### Description
 ---
@@ -35,7 +43,7 @@ The main objective of this project is to build a sentiment analysis model capabl
 - Evaluation: **classification_report, confusion_matrix**
 - Visualization: **matplotlib, seaborn**
 
-### 📂 Data Overview
+### 📂Data Overview
  - <a href="https://www.kaggle.com/datasets/saurabhshahane/twitter-sentiment-dataset">Data source</a>
 
  - <a href="https://github.com/Conyegwara/Twitter-Sentiment-Analysis-OIBSIP-Project-/blob/main/Twitter_Data.csv">Dataset</a>
@@ -49,7 +57,7 @@ The main objective of this project is to build a sentiment analysis model capabl
        
 - Size: ~163,000 rows
 
-#### 🔄 Data Preprocessing
+#### 🔄Data Preprocessing
 
 1. **Missing Values**: Removed all rows with null values in either clean_text or category
   - $df.dropna(inplace=True)$
@@ -67,7 +75,7 @@ The main objective of this project is to build a sentiment analysis model capabl
   - $vectorizer = TfidfVectorizer(max_features=5000)$
   - $X = vectorizer.fit_transform(df['clean_text'])$
 
-### 🤖 Model Training
+### 🤖Model Training
 
 - Algorithm: Multinomial Naive Bayes (MultinomialNB)
 - Train-Test Split: 80% training / 20% testing
@@ -75,7 +83,7 @@ The main objective of this project is to build a sentiment analysis model capabl
   - $model.fit(X_train, y_train)$
 
 
-### 📊 Evaluation Metrics
+### 📊Evaluation Metrics
 
 - Model accurancy: 73%
 -  Setiment Average
@@ -100,7 +108,7 @@ The main objective of this project is to build a sentiment analysis model capabl
 - Positive tweets are well-detected, high recall.
 - Neutral class performs consistently.
 
-### 📈 Visualizations
+### 📈Visualizations
 - 🔹 Confusion Matrix
 - 🔹 Sentiment Distribution
 - A bar chart showing the original distribution of sentiment labels in the dataset.
@@ -108,14 +116,14 @@ The main objective of this project is to build a sentiment analysis model capabl
   ![sentiment distribution](https://github.com/user-attachments/assets/f0b710fa-2007-484d-8227-4eb56f4f4cd1)
 
 
-### ✅ Conclusions
+### ✅Conclusions
 - TF-IDF + Naive Bayes is a strong baseline, achieving ~73% accuracy.
 
 - The model generalizes well for positive/neutral classes; improvement is needed for negative tweets.
 
 - Advanced techniques like SVM, logistic regression, or BERT could further improve performance.
 
-### 🚀 Future Improvements
+### 🚀Future Improvements
 
 - Try deep learning (e.g., LSTM, BERT)
 
